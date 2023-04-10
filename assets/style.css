@@ -1,5 +1,241 @@
-*{
-    margin:0;
-    padding:0;
+* {
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
+
+}
+
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-color: #f4f4f4;
+}
+
+.navegador {
+    background-color: white;
+
+}
+
+#logoTitulo {
+    top: 0px;
+    width: 100px;
+    color: #fa872a;
+}
+
+
+.textoLogo {
+    font-size: 1.7rem;
+    color: #fa872a;
+    font-weight: bold;
+}
+
+
+.btnHomeBanking,
+.btnOfficeBanking {
+    background-color: #fa872a;
+    color: aliceblue;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.btnHomeBanking:hover,
+.btnOfficeBanking:hover {
+    background-color: rgb(250, 233, 202);
+    border: 0.5px solid #fa872a;
+    color: #fa872a;
+    border-radius: 20px;
+
+}
+
+/** carrousel */
+.containercarousel {
+    width: 100%;
+}
+
+.carouselImg {
+    border-radius: 40px;
+}
+
+.carousel-inner img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+}
+
+/** botones servicios bajo el carousel-los que no son naranja */
+.btnServiciosPersonas {
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+    width: 110px;
+
+}
+
+
+.btnServiciosPersonas:hover {
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.arte {
+    color: #fa872a;
+}
+
+/** iconitos */
+.bi {
+    font-size: 24px;
+    color: darkorange;
+}
+
+.ayuda0 a,
+.negro a {
+    color: black;
+}
+
+.cajitasTexto {
+    color: darkorange;
+    font-weight: bold;
+}
+
+/**prefooter ayuda */
+.ayuda0 {
+    padding: 30px;
+    background-color: white;
+}
+
+.ayuda {
+    padding: 30px 0px;
+    background-color: rgb(245, 238, 234);
+}
+
+/** footer */
+.us_fi {
+    max-width: fit-content;
+    color: white;
+    background-color: orange;
+    border-radius: 15px;
+
+}
+
+.us_fi a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer,
+.ultimo {
+    background-color: white;
+}
+
+/** cambia el color por defecto de los inputs enfocados en el formulario de contacto*/
+.form-control:focus {
+    border-color: #ff8800 !important;
+    box-shadow: none !important;
+
+}
+
+/** boton scrollup */
+
+#myBtn {
+    /*scroll up button */
+    /*pone el boton en la esquina derecha inferior*/
+    display: none;
+    /*oculto*/
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    /*lo mantiene por enicma de cualquier otro contenido*/
+    z-index: 100;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 50px;
+
+}
+
+#myBtn:hover {
+    background: rgba(255, 255, 255, .3);
+    backdrop-filter: blur(5px);
+    border: 1.5px solid rgba(209, 213, 219, 0.3);
+}
+
+#myModal,
+
+
+.carousel-caption {
+    border-radius: 20px;
+    background: rgba(255, 255, 255, .3);
+    backdrop-filter: blur(5px);
+    border: 1.5px solid rgba(209, 213, 219, 0.3);
+}
+
+#myModal,
+#myModal1,
+.modal-dialog,
+.modal-content,
+.modal-body {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(3.3px);
+    border: 0px;
+}
+/* otra, pero mas oscuro
+#myModal,
+#myModal1,
+.modal-dialog,
+.modal-content {
+    background: transparent;
+}*/
+.modal-body h4, .modal-body h6 {
+    color: white;
+}
+
+.carousel-caption {
+    border-radius: 20px;
+    background: rgba(155, 155, 155, .3);
+    backdrop-filter: blur(5px);
+    border: 1.5px solid rgba(209, 213, 219, 0.3);
+    margin-bottom: 30px;
+}
+
+
+
+
+/* en patallas con ancho maximo  600px o menos */
+@media screen and (max-width: 600px) {
+    #midasnaranja {
+        display: none; /*desaparece 'Banco Midas' de la navbar en pantallas chicas*/
+        font-size: 1rem;
+    }
+
+    #logoTitulo {
+        width: 50px;
+        position: absolute;
+        left: 45%;
+    }
+
+    .navbar {
+        font-size: 0.8em;
+    }
+
+}
+
+
+/* pantallas de  300px o o menos*/
+@media screen and (max-width: 300px) {
+    .botonesNaranja {
+        display: flex;
+        margin: 10px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #btnHomeBanking {
+        width: 90vw;
+        align-self: center;
+    }
+
 }
