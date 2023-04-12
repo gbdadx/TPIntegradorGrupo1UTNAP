@@ -5,7 +5,12 @@
     scroll-behavior: smooth;
 
 }
-
+/* CSS 
+.#f4f4f4_
+.#ff8800_
+.#fae9ca
+.#f5eeea_
+*/
 
 a {
     text-decoration: none;
@@ -23,20 +28,20 @@ body {
 #logoTitulo {
     top: 0px;
     width: 100px;
-    color: #fa872a;
+    color: #ff8800;
 }
 
 
 .textoLogo {
     font-size: 1.7rem;
-    color: #fa872a;
+    color: #ff8800;
     font-weight: bold;
 }
 
 
 .btnHomeBanking,
 .btnOfficeBanking {
-    background-color: #fa872a;
+    background-color: #ff8800;
     color: aliceblue;
     border-radius: 20px;
     font-weight: bold;
@@ -45,8 +50,8 @@ body {
 .btnHomeBanking:hover,
 .btnOfficeBanking:hover {
     background-color: rgb(250, 233, 202);
-    border: 0.5px solid #fa872a;
-    color: #fa872a;
+    border: 0.5px solid #ff8800;
+    color: #ff8800;
     border-radius: 20px;
 
 }
@@ -81,7 +86,7 @@ body {
 }
 
 .arte {
-    color: #fa872a;
+    color: #ff8800;
 }
 
 /** iconitos */
@@ -89,7 +94,9 @@ body {
     font-size: 24px;
     color: darkorange;
 }
-
+.hacetecliente{
+    color:darkorange;
+}
 .ayuda0 a,
 .negro a {
     color: black;
@@ -104,11 +111,14 @@ body {
 .ayuda0 {
     padding: 30px;
     background-color: white;
+    margin: 0px -10px;
 }
 
 .ayuda {
-    padding: 30px 0px;
+    padding: 30px ;
     background-color: rgb(245, 238, 234);
+    margin: 0px -10px;
+
 }
 
 /** footer */
@@ -182,14 +192,9 @@ body {
     backdrop-filter: blur(3.3px);
     border: 0px;
 }
-/* otra, pero mas oscuro
-#myModal,
-#myModal1,
-.modal-dialog,
-.modal-content {
-    background: transparent;
-}*/
-.modal-body h4, .modal-body h6 {
+
+.modal-body h4,
+.modal-body h6 {
     color: white;
 }
 
@@ -207,7 +212,8 @@ body {
 /* en patallas con ancho maximo  600px o menos */
 @media screen and (max-width: 600px) {
     #midasnaranja {
-        display: none; /*desaparece 'Banco Midas' de la navbar en pantallas chicas*/
+        display: none;
+        /*desaparece 'Banco Midas' de la navbar en pantallas chicas*/
         font-size: 1rem;
     }
 
